@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div style="display: flex;">
+    <div class="app">
+        <h1>Expense Tracker</h1>
+
+        
+        <div class="balance-container" alin="center">
+            <h2>Your Balance</h2>
+            <div id="balance">$1000</div>
+        </div>
+
+        <div class="cashflow-container">
+            <div class="income-container">
+                <h2>Income</h2>
+                <div id="income">$1200</div>
+            </div>
+            <div class="expense-container">
+                <h2>Expense</h2>
+                <div id="expense">$200</div>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2 style="text-align: center;">Add new transaction</h2>
+            <form onsubmit="return false;">
+                <label for="name">Name</label>
+                <input id="name" type="text">
+                <label for="amount">Amount</label>
+                <input id="amount" type="number">
+                <!-- <label for="date">Date</label> -->
+                <!-- <input type="date" type="date"> -->
+                <div style="display: inline-flex; margin-left: auto; margin-right: auto;">
+                <button id="incomeBtn">Add Income</button>
+                <button id="expenseBtn">Add Expense</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="transaction-container" style="float: left; width: 50%;">
+        <h2>Transaction History</h2>
+        <ul id="transaction">
+
+        </ul>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+
+</html>
